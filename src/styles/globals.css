@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --tw-color-primary-dark: #1e1a37;
+  --tw-color-primary-medium: #6c5bd7;
+  --color-primary: rgb(var(--tw-color-primary-dark));
+  --color-primary-medium: rgb(var(--tw-color-primary-medium));
+}
+
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--tw-color-primary-dark);
+  }
+
+  .layout {
+    /* 1100px */
+    max-width: 68.75rem;
+    @apply mx-auto w-11/12;
+  }
+
+  /* Class to adjust with sticky footer */
+  .min-h-main {
+    @apply min-h-[calc(100vh-56px)];
+  }
+}
