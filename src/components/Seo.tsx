@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title: "I'm Miguel",
-  siteName: 'MiguelDev - Portfolio',
+  siteName: 'MiguelDev',
   description: 'Welcome to my personal website',
   url: 'https://www.migueldev.me',
   type: 'website',
