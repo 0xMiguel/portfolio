@@ -5,10 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --tw-color-primary-dark: #1e1a37;
-  --tw-color-primary-medium: #6c5bd7;
-  --color-primary: rgb(var(--tw-color-primary-dark));
-  --color-primary-medium: rgb(var(--tw-color-primary-medium));
+  --tw-color-primary-dark: #2b2d42;
 }
 
 @layer base {

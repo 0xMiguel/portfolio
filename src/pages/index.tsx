@@ -11,7 +11,7 @@ export default function HomePage() {
       <Seo templateTitle='Home' />
       <main>
         <section className='flex h-96 flex-col md:h-96'>
-          <nav className='bg-medium-dark bg-opacity-20 px-2 py-2.5 sm:px-4 '>
+          <nav className='bg-primary-medium bg-opacity-20 px-2 py-2.5 sm:px-4 '>
             <div className='container mx-auto flex flex-wrap items-center justify-between'>
               <button
                 data-collapse-toggle='navbar-default'
@@ -60,12 +60,13 @@ export default function HomePage() {
                   </li>
                 </ul>
               </div>
-              <div className='text-light'>
-                <span className='cursor-pointer hover:text-medium'>
+              <div className='text-primary-light-25'>
+                <span className='cursor-pointer hover:text-primary-light-50'>
                   🇺🇸 English{' '}
                 </span>
-                <span className='cursor-pointer hover:text-medium'>
-                  / 🇪🇸 Español
+                <span> / </span>
+                <span className='cursor-pointer hover:text-primary-light-50'>
+                  🇪🇸 Español
                 </span>
               </div>
             </div>
@@ -77,16 +78,16 @@ export default function HomePage() {
                 <h1 className='mb-2 text-5xl font-bold text-medium md:text-6xl'>
                   👋 I’m Miguel
                 </h1>
-                <span className='ml-14 font-semibold text-red-regular md:text-xl'>
+                <span className='ml-14 text-primary-light-50 md:text-xl'>
                   Full Stack Software Developer
                 </span>
               </div>
               <div className='flex flex-row'>
                 <button
                   type='button'
-                  className='mt-2 mb-2 inline-flex items-center rounded-lg bg-red-primary px-5 py-2.5 text-center text-sm font-medium text-red-light hover:bg-red-dark hover:bg-opacity-80'
+                  className='mt-2 mb-2 inline-flex items-center rounded-lg bg-red-primary px-5 py-2.5 text-center text-sm font-medium text-red-light  hover:bg-opacity-80'
                 >
-                  <span className='mr-2'>Let&apos;s talk</span>
+                  <span className='mr-2 font-bold'>Let&apos;s talk</span>
                   <Image
                     alt='paper plane'
                     src='/images/paper_plane.svg'
@@ -95,15 +96,8 @@ export default function HomePage() {
                   />
                 </button>
                 <Link href='/about'>
-                  <button className='ml-4 inline-flex items-center text-center text-medium-dark hover:text-medium'>
-                    <span className='mr-2'>About me</span>
-                    <Image
-                      alt='right pointer'
-                      className='ml-2 mt-2'
-                      src='/images/right_pointer.svg'
-                      width={18}
-                      height={18}
-                    />
+                  <button className='ml-4 inline-flex items-center text-center text-primary-light-50 hover:text-primary-light-25'>
+                    <span className='mr-2 font-bold'>About me</span>
                   </button>
                 </Link>
               </div>
@@ -140,31 +134,31 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className='flex flex-col'>
-          <div className='mt-2 flex flex-col pl-6 md:pl-12'>
-            <span className='text-2xl font-semibold text-light'>
+        <section className='flex flex-col items-center p-3'>
+          <div className='mb-4 flex w-full flex-col text-left text-center'>
+            <span className='text-2xl font-semibold text-primary-light-25'>
               Featured projects ✨
             </span>
-            <span className='text-lg text-light text-medium-regular'>
+            <span className='text-lg text-light text-primary-medium-50'>
               A collection of some side projects I have made
             </span>
           </div>
-          <div className='mt-2 flex flex-col md:flex-row'>
+          <div className='flex flex-col md:flex-row'>
             <Link href='https://posterrr.vercel.app/'>
-              <div className='h-62 m-4  flex cursor-pointer flex-col rounded-md bg-dark p-2 shadow-xl hover:bg-medium-dark md:ml-12 md:w-96'>
-                <div className='container p-3 pl-4'>
-                  <span className='cursor-pointer text-2xl font-bold text-light hover:text-medium-regular'>
+              <div className='h-62 mb-4 flex cursor-pointer flex-col rounded-md bg-primary-dark-50 shadow-xl hover:bg-primary-medium md:mr-4  md:w-96'>
+                <div className='p-3'>
+                  <span className='cursor-pointer text-2xl font-bold text-primary-light-25 hover:text-primary-light-50'>
                     Posterrr
                   </span>
                   <span>
-                    <p className='mt-1 text-justify text-sm text-medium-regular'>
+                    <p className='text-justify text-sm text-primary-light'>
                       A web scraper that searches for any article in medium,
                       hashnode, dev.to, and hackernews. Articles are ranked
                       based on number of likes and comments then shown in the
                       frontend.
                     </p>
                   </span>
-                  <ul className='mt-1 ml-4 list-disc text-light'>
+                  <ul className=' ml-4 list-disc text-primary-light-25'>
                     <li>
                       Scraper built using{' '}
                       <span className='font-semibold'>Golang</span>{' '}
@@ -182,18 +176,18 @@ export default function HomePage() {
                 </div>
               </div>
             </Link>
-            <div className='h-62 m-4 flex cursor-pointer flex-col rounded-md bg-dark p-2 shadow-xl hover:bg-medium-dark md:w-96'>
-              <div className='container p-3 pl-4'>
-                <span className='cursor-pointer text-2xl font-bold text-light hover:text-medium-regular'>
+            <div className='h-62 mb-4 flex cursor-pointer flex-col rounded-md bg-primary-dark-50 shadow-xl hover:bg-primary-medium md:mr-4 md:w-96'>
+              <div className='p-3'>
+                <span className='cursor-pointer text-2xl font-bold text-primary-light-25 hover:text-primary-light-50'>
                   My portfolio
                 </span>
                 <span>
-                  <p className='mt-1 text-justify text-sm text-medium-regular'>
+                  <p className='text-justify text-sm text-primary-light'>
                     Where I showcase my personal work, skills, and blog about
                     things I like.
                   </p>
                 </span>
-                <ul className='mt-1 ml-4 list-disc text-light'>
+                <ul className='mt-1 ml-4 list-disc text-primary-light-25'>
                   <li>
                     Frontend built with{' '}
                     <span className='font-semibold'>NextJS</span> and
@@ -207,19 +201,19 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/* Footer section */}
-        <section className='flex flex-col'>
-          <div className='flex flex-col p-5 md:pl-12'>
-            <h5 className='text-2xl font-semibold text-light'>
+
+        <section className='flex flex-col items-center p-3'>
+          <div className='flex flex-col items-center'>
+            <h5 className='text-2xl font-semibold text-primary-light-25'>
               Quote of the day ✍️
             </h5>
-            <span className='text-medium'>
+            <span className='text-primary-light'>
               “Walker there is no path the path is made by walking” - Antonio
               Machado
             </span>
           </div>
-          <div className='flex flex-col p-5 md:pl-12'>
-            <h5 className='mb-2 text-2xl font-semibold text-light'>
+          <div className='mt-4 flex flex-col items-center'>
+            <h5 className='text-2xl font-semibold text-primary-light-25'>
               Useful articles ✅
             </h5>
             <div className='mb-3 flex h-full flex-row'>
@@ -230,12 +224,11 @@ export default function HomePage() {
                 width={50}
                 height={40}
               />
-              <div className='h-full w-64 break-words rounded-tr-lg rounded-br-lg bg-dark p-2 text-sm text-light'>
+              <div className='h-full w-64 break-words rounded-tr-lg rounded-br-lg bg-primary-dark-50 p-2 text-sm text-primary-light-25'>
                 How To Create Your Initial Coin Offering (ICO) Contract in
                 Ethereum
               </div>
             </div>
-
             <div className='mb-3 flex h-full flex-row'>
               <Image
                 alt='post image'
@@ -244,12 +237,11 @@ export default function HomePage() {
                 width={50}
                 height={40}
               />
-              <div className='h-full w-64 break-words rounded-tr-lg rounded-br-lg bg-dark p-2 text-sm text-light'>
+              <div className='h-full w-64 break-words rounded-tr-lg rounded-br-lg bg-primary-dark-50 p-2 text-sm text-primary-light-25'>
                 How To Create Your Initial Coin Offering (ICO) Contract in
                 Ethereum
               </div>
             </div>
-
             <div className='flex h-full flex-row'>
               <Image
                 alt='post image'
@@ -258,18 +250,12 @@ export default function HomePage() {
                 width={50}
                 height={40}
               />
-              <div className='h-full w-64 break-words rounded-tr-lg rounded-br-lg bg-dark p-2 text-sm text-light'>
+              <div className='h-full w-64 break-words rounded-tr-lg rounded-br-lg bg-primary-dark-50 p-2 text-sm text-primary-light-25'>
                 How To Create Your Initial Coin Offering (ICO) Contract in
                 Ethereum
               </div>
             </div>
           </div>
-
-          {/*<div className='h-full w-full p-2 text-center text-light opacity-40'>*/}
-          {/*  <span className='mt-auto align-bottom'>*/}
-          {/*    Made with ❤️ by me - Black Lives Matter*/}
-          {/*  </span>*/}
-          {/*</div>*/}
         </section>
       </main>
     </Layout>

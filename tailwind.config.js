@@ -12,8 +12,13 @@ module.exports = {
       colors: {
         primary: {
           // Customize it on globals.css :root
-          dark: 'rgb(var(--tw-color-primary-dark) / <alpha-value>)',
-          medium: 'rgb(var(--tw-color-primary-medium) / <alpha-value>)',
+          dark: '#2B2D42',
+          'dark-50': '#3E4160',
+          medium: '#52567F',
+          'medium-50': '#686C9C',
+          light: '#878AB1',
+          'light-50': '#A5A8C5',
+          'light-25': '#C4C6D9',
         },
         'red-dark': '#CE3333',
         'red-primary': '#D75B5B',
