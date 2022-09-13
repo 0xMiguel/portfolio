@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
@@ -25,3 +21,7 @@
     @apply min-h-[calc(100vh-56px)];
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

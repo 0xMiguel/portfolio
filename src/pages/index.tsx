@@ -88,7 +88,7 @@ export default function HomePage() {
               <span className='text-2xl font-semibold text-primary-light-25'>
                 <TranslatedText section='featured' content='title' />
               </span>
-              <span className='text-lg text-light text-primary-medium-50'>
+              <span className='text-lg text-primary-medium-50'>
                 <TranslatedText section='featured' content='description' />
               </span>
             </div>
