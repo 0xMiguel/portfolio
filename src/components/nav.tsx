@@ -43,16 +43,24 @@ export default function Navbar() {
             onClick={() => {
               changeLanguage('english');
             }}
-            className='cursor-pointer hover:text-primary-light-50'
+            className={`cursor-pointer hover:text-primary-light-50 ${
+              store.isEnglish
+                ? 'font-bold text-primary-light underline underline-offset-2'
+                : ''
+            }`}
           >
-            🇺🇸 English{' '}
+            🇺🇸 English
           </span>
           <span> / </span>
           <span
             onClick={() => {
               changeLanguage('spanish');
             }}
-            className='cursor-pointer hover:text-primary-light-50'
+            className={`cursor-pointer hover:text-primary-light-50 ${
+              store.isSpanish
+                ? 'font-bold text-primary-light underline underline-offset-2'
+                : ''
+            }`}
           >
             🇪🇸 Español
           </span>

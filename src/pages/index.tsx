@@ -19,21 +19,21 @@ export default function HomePage() {
       <Navbar />
       <main className='flex justify-center'>
         <div className='flex h-max w-full flex-col p-4 md:w-7/12'>
-          <section className='flex h-96 flex-col'>
+          <section className='mb-16 flex flex-col'>
             <div className='flex h-full flex-col '>
               <div className='flex flex-col items-center'>
-                <div className='mt-24 md:mt-20'>
-                  <h1 className='mb-2 text-5xl font-bold text-medium md:text-6xl'>
+                <div className='mt-14 md:mt-20'>
+                  <h1 className='mb-2 ml-6 text-5xl font-bold text-medium md:ml-16 md:text-6xl'>
                     <TranslatedText section='mainHeader' content='name' />
                   </h1>
-                  <span className='ml-16 text-primary-light-50 md:ml-20 md:text-xl'>
+                  <span className='ml-6 text-primary-light-50 md:ml-16 md:ml-20 md:text-xl'>
                     <TranslatedText section='mainHeader' content='role' />
                   </span>
                 </div>
-                <div className='flex flex-row md:ml-10'>
+                <div className='flex flex-row md:ml-6'>
                   <button
                     type='button'
-                    className='mt-2 mb-2 inline-flex items-center rounded-lg bg-red-primary px-6 py-2 text-center text-sm font-medium text-red-light shadow-2xl  hover:bg-opacity-80'
+                    className='mt-4 mb-2 inline-flex items-center rounded-lg bg-red-primary px-6 py-2 text-center text-sm font-medium text-red-light shadow-2xl  hover:bg-opacity-80'
                   >
                     <span className='font-bold'>
                       <TranslatedText
@@ -43,14 +43,14 @@ export default function HomePage() {
                     </span>
                   </button>
                   <Link href='/about'>
-                    <button className='ml-4 inline-flex items-center text-center text-primary-light-50 hover:text-primary-light-25'>
+                    <button className='mt-1 ml-4 inline-flex items-center text-center text-primary-light-50 hover:text-primary-light-25'>
                       <span className='mr-2 font-bold'>
                         <TranslatedText section='mainHeader' content='about' />
                       </span>
                     </button>
                   </Link>
                 </div>
-                <div className='mt-6 flex flex-row items-center'>
+                <div className='ml-2 mt-4 flex flex-row items-center'>
                   <div className='mr-8'>
                     <Image
                       className='cursor-pointer'

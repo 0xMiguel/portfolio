@@ -18,13 +18,13 @@ export const translations: TranslationInterface = {
   },
   mainHeader: {
     english: {
-      name: '👋 I’m Miguel',
+      name: 'I’m Miguel 👋',
       role: 'Full Stack Software Developer',
       mainButton: "Let's talk!",
       about: 'About me',
     },
     spanish: {
-      name: '👋 Soy Miguel',
+      name: 'Soy Miguel 👋',
       role: 'Desarrollador de Software Full Stack',
       mainButton: 'Hablemos!',
       about: 'Sobre mi',
