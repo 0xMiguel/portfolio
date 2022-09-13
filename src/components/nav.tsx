@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { useTranslationState } from '@/hooks/store';
 
-import { translations } from '@/utils/translations';
+import TranslatedText from '@/components/TranslatedText';
 
 export default function Navbar() {
   const store = useTranslationState();
@@ -21,25 +21,19 @@ export default function Navbar() {
                 href='#'
                 className='block py-2 pr-4 pl-3 text-primary-light-25 hover:text-primary-light'
                 aria-current='page'
-                suppressHydrationWarning
               >
-                {store.isEnglish
-                  ? translations.navbar.english.home
-                  : translations.navbar.spanish.home}
+                <TranslatedText section='navbar' content='home' />
               </a>
             </Link>
           </li>
           <li>
             <Link href='/about'>
               <a
-                suppressHydrationWarning
                 href='#'
                 className='block py-2 pr-4 pl-3 text-primary-light-25 hover:text-primary-light'
                 aria-current='page'
               >
-                {store.isEnglish
-                  ? translations.navbar.english.about
-                  : translations.navbar.spanish.about}
+                <TranslatedText section='navbar' content='about' />
               </a>
             </Link>
           </li>

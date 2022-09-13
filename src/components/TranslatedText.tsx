@@ -1,9 +1,21 @@
 import * as React from 'react';
 
+import { useTranslationState } from '@/hooks/store';
+
+import { translations } from '@/utils/translations';
+
 interface TranslatedTextOpts {
-  section: 'nav' | 'hero' | 'featured';
+  section: 'navbar' | 'mainHeader' | 'featured' | 'quotes' | 'articles';
+  content: string;
 }
 
 export default function TranslatedText(props: TranslatedTextOpts) {
-  return <span>{props.section}</span>;
+  const store = useTranslationState();
+  return (
+    <span suppressHydrationWarning>
+      {store.isEnglish
+        ? translations[props.section].english[props.content]
+        : translations[props.section].spanish[props.content]}
+    </span>
+  );
 }
