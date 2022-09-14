@@ -14,30 +14,26 @@ export default function aboutMe() {
       </section>
 
       <section className='flex justify-center'>
-        <div className='mt-5 h-max w-full  w-full p-4 md:mt-10 md:w-7/12'>
+        <div className='mt-5 h-max w-full w-full p-4 md:mt-10 md:w-7/12'>
           <div>
-            <span className='text-2xl font-semibold text-medium-regular'>
+            <span className='text-2xl font-semibold text-primary-light-25'>
               My background 😁
             </span>
-            <p className='mt-2 text-justify text-lg text-light'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. In
-              massa tempor nec feugiat nisl pretium. Est velit egestas dui id
-              ornare arcu odio ut. Tempus urna et pharetra pharetra. Cursus
-              turpis massa tincidunt dui ut. Tellus rutrum tellus pellentesque
-              eu tincidunt tortor. Porttitor lacus luctus accumsan tortor
-              posuere ac. Dolor sit amet consectetur adipiscing. Aliquam nulla
-              facilisi cras fermentum odio eu feugiat pretium nibh. Non quam
-              lacus suspendisse faucibus interdum posuere. Arcu odio ut sem
-              nulla pharetra diam sit amet nisl. Congue mauris rhoncus aenean
-              vel elit scelerisque mauris. Sodales ut etiam sit amet nisl. Non
-              sodales neque sodales ut etiam. Metus dictum at tempor commodo
-              ullamcorper a. In egestas erat imperdiet sed.
+            <p className='mt-2 text-justify text-lg text-primary-light'>
+              Im a software engineer who is passionate about learning. I love
+              solving problems and working with other people to make the world a
+              better place. I have been programming since I was nine, and I have
+              experience with the technologies listed below. Ive worked on
+              everything from simple websites to complex web applications. In
+              addition to being able to write code, I can also debug effectively
+              and communicate clearly with my teammates. I am currently learning
+              how to program in Rust because its a language that is becoming
+              more popular due to its low overhead and high performance.
             </p>
           </div>
 
           <div className='mt-10 flex flex-col'>
-            <span className='text-2xl font-semibold text-medium-regular'>
+            <span className='text-2xl font-semibold text-primary-light-25'>
               Technologies 💻
             </span>
             <span className='text-lg text-primary-medium-50'>
@@ -124,7 +120,7 @@ export default function aboutMe() {
                 backgroundColor='bg-technologies-electron'
               />
               <Hashtag
-                tag='Typescript'
+                tag='TypeScript'
                 textSize='text-lg'
                 textColor='text-white'
                 backgroundColor='bg-technologies-typescript'

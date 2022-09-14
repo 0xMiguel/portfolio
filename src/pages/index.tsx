@@ -18,7 +18,7 @@ export default function HomePage() {
       <Seo templateTitle='Home' />
       <Navbar />
       <main className='flex justify-center'>
-        <div className='flex h-max w-full flex-col p-4 md:w-7/12'>
+        <div className='flex h-max flex-col p-4 md:w-7/12'>
           <section className='mb-16 flex flex-col'>
             <div className='flex h-full flex-col '>
               <div className='flex flex-col items-center'>
@@ -92,7 +92,7 @@ export default function HomePage() {
                 <TranslatedText section='featured' content='description' />
               </span>
             </div>
-            <div className='flex flex-col md:flex-row'>
+            <div className='flex flex-col sm:flex-col md:flex-row'>
               <Link href='https://posterrr.vercel.app/'>
                 <div className='mb-4 flex cursor-pointer flex-col rounded-md bg-primary-dark-50 shadow-xl hover:bg-primary-medium md:mr-4 md:w-full'>
                   <div className='p-3'>
