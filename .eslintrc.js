@@ -22,8 +22,6 @@ module.exports = {
       'warn',
       { props: 'never', children: 'never' },
     ],
-
-    //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'warn',
     'unused-imports/no-unused-vars': [
@@ -35,9 +33,6 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
-    //#endregion  //*======== Unused Import ===========
-
-    //#region  //*=========== Import Sort ===========
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': [
       'warn',
@@ -69,12 +64,10 @@ module.exports = {
             '^\\.\\./\\.\\./\\.\\.(?!/?$)',
           ],
           ['^@/types'],
-          // other that didnt fit in
           ['^'],
         ],
       },
     ],
-    //#endregion  //*======== Import Sort ===========
   },
   globals: {
     React: true,

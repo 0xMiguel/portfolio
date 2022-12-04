@@ -22,7 +22,7 @@ export default function HomePage() {
           <section className='mb-16 flex flex-col'>
             <div className='flex h-full flex-col '>
               <div className='flex flex-col items-center'>
-                <div className='mt-14 md:mt-20'>
+                <div className='mt-14 md:mt-20 '>
                   <h1 className='mb-2 ml-6 text-5xl font-bold text-medium md:ml-16 md:text-6xl'>
                     <TranslatedText section='mainHeader' content='name' />
                   </h1>
@@ -31,17 +31,19 @@ export default function HomePage() {
                   </span>
                 </div>
                 <div className='flex flex-row md:ml-6'>
-                  <button
-                    type='button'
-                    className='mt-4 mb-2 inline-flex items-center rounded-lg bg-red-primary px-6 py-2 text-center text-sm font-medium text-red-light shadow-2xl  hover:bg-opacity-80'
-                  >
-                    <span className='font-bold'>
-                      <TranslatedText
-                        section='mainHeader'
-                        content='mainButton'
-                      />
-                    </span>
-                  </button>
+                  <Link href='https://calendly.com/miguelbetancourt'>
+                    <button
+                      type='button'
+                      className='mt-4 mb-2 inline-flex items-center rounded-lg bg-red-primary px-6 py-2 text-center text-sm font-medium text-red-light shadow-2xl  hover:bg-opacity-80'
+                    >
+                      <span className='font-bold'>
+                        <TranslatedText
+                          section='mainHeader'
+                          content='mainButton'
+                        />
+                      </span>
+                    </button>
+                  </Link>
                   <Link href='/about'>
                     <button className='mt-1 ml-4 inline-flex items-center text-center text-primary-light-50 hover:text-primary-light-25'>
                       <span className='mr-2 font-bold'>
@@ -50,33 +52,29 @@ export default function HomePage() {
                     </button>
                   </Link>
                 </div>
-                <div className='ml-2 mt-4 flex flex-row items-center'>
-                  <div className='mr-8'>
-                    <Image
-                      className='cursor-pointer'
-                      alt='twitter logo'
-                      src='/images/twitter_logo.svg'
-                      width={40}
-                      height={40}
-                    />
-                  </div>
-                  <div className='mr-8'>
-                    <Image
-                      className='cursor-pointer'
-                      alt='github logo'
-                      src='/images/github_logo.svg'
-                      width={40}
-                      height={40}
-                    />
-                  </div>
+                <div className='mt-4 flex inline-flex flex-row items-center space-x-6'>
                   <div>
-                    <Image
-                      alt='telegram logo'
-                      className='mr-4 cursor-pointer'
-                      src='/images/telegram_logo.svg'
-                      width={40}
-                      height={40}
-                    />
+                    <Link href='https://twitter.com/miguelooo_'>
+                      <Image
+                        className='cursor-pointer'
+                        alt='twitter logo'
+                        src='/images/twitter_logo.svg'
+                        width={40}
+                        height={40}
+                      />
+                    </Link>
+                  </div>
+
+                  <div>
+                    <Link href='https://github.com/morrocoyy'>
+                      <Image
+                        className='cursor-pointer'
+                        alt='github logo'
+                        src='/images/github_logo.svg'
+                        width={40}
+                        height={40}
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
