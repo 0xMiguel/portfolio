@@ -1,9 +1,10 @@
 import * as React from 'react';
 
 import Hashtag from '@/components/Hashtag';
-import Layout from '@/components/layout/Layout';
-import Navbar from '@/components/nav';
-import Seo from '@/components/Seo';
+import Navbar from '@/components/Nav';
+
+import Layout from '@/features/Layout';
+import Seo from '@/features/Seo';
 
 export default function aboutMe() {
   return (
@@ -16,10 +17,10 @@ export default function aboutMe() {
       <section className='flex justify-center'>
         <div className='mt-5 h-max w-full w-full p-4 md:mt-10 md:w-7/12'>
           <div>
-            <span className='text-2xl font-semibold text-primary-light-25'>
+            <span className='text-primary-light-25 text-2xl font-semibold'>
               My background 😁
             </span>
-            <p className='mt-2 text-justify text-lg text-primary-light'>
+            <p className='text-primary-light mt-2 text-justify text-lg'>
               Im a software engineer who is passionate about learning. I love
               solving problems and working with other people to make the world a
               better place. I have been programming since I was nine, and I have
@@ -33,10 +34,10 @@ export default function aboutMe() {
           </div>
 
           <div className='mt-10 flex flex-col'>
-            <span className='text-2xl font-semibold text-primary-light-25'>
+            <span className='text-primary-light-25 text-2xl font-semibold'>
               Technologies 💻
             </span>
-            <span className='text-lg text-primary-medium-50'>
+            <span className='text-primary-medium-50 text-lg'>
               These are some of the technologies I use, the list keep growing
               because I love learning 📚
             </span>

@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --tw-color-primary-dark: #2b2d42;
+  --tw-color-base: #141414;
 }
 
 @layer base {
   body {
     font-family: 'Open Sans', sans-serif;
-    background: var(--tw-color-primary-dark);
+    position: relative;
+    background: url('/images/dot.png'), #141414;
+    user-select: none;
+    -webkit-user-select: none; /* For Safari and Chrome */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer and Edge */
   }
 
   .layout {
@@ -19,6 +24,41 @@
   /* Class to adjust with sticky footer */
   .min-h-main {
     @apply min-h-[calc(100vh-56px)];
+  }
+
+  .text-custom-gradient {
+    background-image: linear-gradient(
+      90deg,
+      #44ff9a 0%,
+      #44b0ff 22.86%,
+      #8b44ff 48.36%,
+      #ff6644 73.33%,
+      #ebff70 99.34%
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  .text-custom-gradient-diffused {
+    background-image: linear-gradient(
+      90deg,
+      #44ff9a 0%,
+      #44b0ff 22.86%,
+      #8b44ff 48.36%,
+      #ff6644 73.33%,
+      #ebff70 99.34%
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+    opacity: 0.6;
+    filter: blur(12px);
   }
 }
 
