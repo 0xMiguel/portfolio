@@ -19,7 +19,7 @@ export default function Navbar() {
             <Link href='/'>
               <a
                 href='#'
-                className='block py-2 pr-4 pl-3 text-primary-light-25 hover:text-primary-light'
+                className='text-primary-light-25 hover:text-primary-light block py-2 pr-4 pl-3'
                 aria-current='page'
               >
                 <TranslatedText section='navbar' content='home' />
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link href='/about'>
               <a
                 href='#'
-                className='block py-2 pr-4 pl-3 text-primary-light-25 hover:text-primary-light'
+                className='text-primary-light-25 hover:text-primary-light block py-2 pr-4 pl-3'
                 aria-current='page'
               >
                 <TranslatedText section='navbar' content='about' />
@@ -43,9 +43,9 @@ export default function Navbar() {
             onClick={() => {
               changeLanguage('english');
             }}
-            className={`cursor-pointer hover:text-primary-light-50 ${
+            className={`hover:text-primary-light-50 cursor-pointer ${
               store.isEnglish
-                ? 'font-bold text-primary-light underline underline-offset-2'
+                ? 'text-primary-light font-bold underline underline-offset-2'
                 : ''
             }`}
           >
@@ -56,9 +56,9 @@ export default function Navbar() {
             onClick={() => {
               changeLanguage('spanish');
             }}
-            className={`cursor-pointer hover:text-primary-light-50 ${
+            className={`hover:text-primary-light-50 cursor-pointer ${
               store.isSpanish
-                ? 'font-bold text-primary-light underline underline-offset-2'
+                ? 'text-primary-light font-bold underline underline-offset-2'
                 : ''
             }`}
           >

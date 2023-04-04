@@ -6,43 +6,33 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      boxShadow: {
+        // sm: '0px 1px 3px 0px #00000014',
+        sm: '0px 1px 1px rgba(18, 18, 18, 0.3)',
+      },
+      backgroundImage: {
+        'purple-gradient': 'linear-gradient(180deg, #8080FF 0%, #AA99FF 100%)',
+      },
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
+      fontSize: {
+        sm: ['0.875rem'],
+        md: ['1rem'],
+        lg: ['1.125rem'],
+        xl: ['1.25rem'],
+        '2xl': ['1.5rem'],
+        '3xl': ['1.875rem'],
+        '4xl': ['2.25rem'],
+        '6xl': ['3.75rem'],
+      },
       colors: {
-        primary: {
-          dark: '#2B2D42',
-          'dark-50': '#3E4160',
-          medium: '#52567F',
-          'medium-50': '#686C9C',
-          light: '#878AB1',
-          'light-50': '#A5A8C5',
-          'light-25': '#C4C6D9',
-        },
-        technologies: {
-          electron: '#455377',
-          typescript: '#017ACB',
-          tailwind: '#06B6D4',
-          docker: '#2496ED',
-          golang: '#00ACD7',
-          git: '#DE4C36',
-          postman: '#FF6C37',
-          sql: '#336791',
-          python: '#E3BB00',
-          react: '#2BC1EA',
-          redux: '#764ABC',
-          node: '#6DA62E',
-          aws: '#FF9900',
-        },
-        'red-dark': '#CE3333',
-        'red-primary': '#D75B5B',
-        'red-light': '#F5D6D6',
-        'red-regular': '#EBADAD',
-        dark: '#4933CE',
-        'medium-regular': '#B6ADEB',
-        'medium-dark': '#6C5BD7',
-        medium: '#9184E1',
-        light: '#DAD6F5',
+        'base': '#1F2937',
+        'blue-500': '#2E88F6',
+        'indigo-600': '#A6B4FC',
+        'tertiary-50': '#272727',
+        'tertiary-200': '#434343',
+        'purple-500': '#D07FFF',
       },
       keyframes: {
         flicker: {
@@ -68,6 +58,9 @@ module.exports = {
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+      },
+      borderRadius: {
+        md: '0.5rem',
       },
     },
   },
