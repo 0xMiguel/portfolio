@@ -33,6 +33,7 @@ module.exports = {
         'tertiary-50': '#272727',
         'tertiary-200': '#434343',
         'purple-500': '#D07FFF',
+        'green-500': '#85EFAC',
       },
       keyframes: {
         flicker: {
