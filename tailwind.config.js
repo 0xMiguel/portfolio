@@ -7,8 +7,10 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        // sm: '0px 1px 3px 0px #00000014',
         sm: '0px 1px 1px rgba(18, 18, 18, 0.3)',
+        'pulse': '0 0 0 0 rgba(0, 0, 0, 1)',
+        'pulse-inner': '0 0 0 0 rgba(0, 0, 0, 0.7)',
+        'pulse-none': '0 0 0 0 rgba(0, 0, 0, 0)',
       },
       backgroundImage: {
         'purple-gradient': 'linear-gradient(180deg, #8080FF 0%, #AA99FF 100%)',
@@ -36,32 +38,29 @@ module.exports = {
         'green-500': '#85EFAC',
       },
       keyframes: {
-        flicker: {
-          '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
-            opacity: 0.99,
-            filter:
-              'drop-shadow(0 0 1px rgba(252, 211, 77)) drop-shadow(0 0 15px rgba(245, 158, 11)) drop-shadow(0 0 1px rgba(252, 211, 77))',
-          },
-          '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': {
-            opacity: 0.4,
-            filter: 'none',
-          },
-        },
-        shimmer: {
+        pulse: {
           '0%': {
-            backgroundPosition: '-700px 0',
+            transform: 'scale(0.95)',
+            boxShadow: '0 0 0 0 rgba(51, 217, 178, 0.7)',
+          },
+          '70%': {
+            transform: 'scale(1)',
+            boxShadow: '0 0 0 10px rgba(51, 217, 178, 0)',
           },
           '100%': {
-            backgroundPosition: '700px 0',
+            transform: 'scale(0.95)',
+            boxShadow: '0 0 0 0 rgba(51, 217, 178, 0)',
           },
         },
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+        pulse: 'pulse 2s infinite',
       },
       borderRadius: {
         md: '0.5rem',
+        full: '50%',
       },
     },
   },
