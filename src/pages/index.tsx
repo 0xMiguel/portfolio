@@ -32,21 +32,26 @@ export default function HomePage() {
               <img src='/images/github_logo.svg' alt='github' />
             </div>
           </Box>
-          <Box className='flex-1 flex-shrink-0 items-center justify-center border-2 border-purple-500 bg-purple-gradient'>
-            <div className='mt-6 flex flex-col lg:flex-row'>
+          <Box className='flex-1 flex-shrink-0  border-2 border-purple-500 bg-purple-gradient'>
+            <div className='justify-left mt-4 flex flex-col items-center justify-center lg:flex-row'>
               <img
                 src='/images/profile_image.jpg'
                 className='h-36 w-36 rounded-full border-2 border-purple-500 lg:mt-2'
                 alt='profile image'
               />
-              <div className='ml-4 flex flex-col lg:mt-4'>
-                <span className='text-4xl font-bold text-white'>Miguel B.</span>
-                <span className='text-md font-semibold text-white lg:text-xl'>
+              <div className='ml-4 flex flex-col justify-center lg:mt-4'>
+                <span className='text-4xl font-semibold text-white'>
+                  Miguel B.
+                </span>
+                <span className='text-md font-bold text-white lg:text-xl'>
                   Full Stack Developer 👨‍💻
                 </span>
-                <span className='text-lg font-medium text-green-500'>
-                  Online
-                </span>
+                <div className='mt-1 flex flex-row items-center'>
+                  <div className='mr-2 h-3 w-3 scale-100 transform animate-pulse rounded-full bg-green-500'></div>
+                  <span className='text-lg font-semibold text-green-500'>
+                    Online
+                  </span>
+                </div>
               </div>
             </div>
           </Box>
