@@ -111,6 +111,28 @@ export default function HomePage() {
             </div>
           </Box>
         </div>
+        <div className='mt-10 flex flex-col gap-y-8 md:gap-x-8 lg:flex-row'>
+          <Link href='/projects/dmweed'>
+            <MotionBox
+              whileHover={{ y: -10 }}
+              className='flex w-full cursor-pointer justify-center py-20 lg:w-4/12'
+            >
+              <div>
+                <img src='/images/dmweed_logo.svg' alt='dmweed logo' />
+              </div>
+            </MotionBox>
+          </Link>
+          <Link href='/projects/nova'>
+            <MotionBox
+              whileHover={{ y: -10 }}
+              className='flex w-full cursor-pointer justify-center py-20 lg:w-4/12'
+            >
+              <div>
+                <img src='/images/nova_logo.svg' alt='nova logo' />
+              </div>
+            </MotionBox>
+          </Link>
+        </div>
       </main>
     </Layout>
   );
