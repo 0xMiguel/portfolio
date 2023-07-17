@@ -14,10 +14,10 @@ const Layout = ({ children, loading }: LayoutProps) => {
           </div>
         </>
       ) : (
-        <article className='flex h-screen flex-grow flex-col p-5'>
+        <article className='flex h-screen flex-grow flex-col '>
           <main className='grid flex-grow grid-cols-[1fr_minmax(0px,1280px)_1fr] gap-6 gap-y-8'>
             {/* todo: remove before deploy*/}
-            <section className='col-start-2 content-start gap-4 gap-y-8 lg:gap-6'>
+            <section className='col-start-2 content-start gap-4 gap-y-8 '>
               {children}
             </section>
           </main>
