@@ -31,6 +31,10 @@ module.exports = {
       colors: {
         'base': '#1F2937',
         'blue-500': '#2E88F6',
+        'blue-600': '#44b0ff',
+        'yellow-400': '#ebff70',
+        'green-600': '#44ff9a',
+        'orange-500': '#ff6644',
         'indigo-600': '#A6B4FC',
         'tertiary-50': '#272727',
         'tertiary-200': '#434343',
